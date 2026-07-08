@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Theme Switcher Demo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>CSS Variable Theme Switcher</h1>
+
+<p>
+Click the button below to switch between light and dark themes.
+</p>
+
+<button id="toggleTheme">
+Toggle Theme
+</button>
+
+<div class="card">
+<h2>Demo Card</h2>
+<p>
+This card updates automatically when the theme changes.
+</p>
+</div>
+
+</div>
+
+<script>
+
+const button = document.getElementById("toggleTheme");
+
+button.addEventListener("click", () => {
+
+document.body.classList.toggle("dark");
+
+});
+
+</script>
+
+</body>
+</html>
